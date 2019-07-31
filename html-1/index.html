@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <center>
+            <h1>Please put all info.</h1><br>
+            <p>Your personal information will</p>
+            <h1>NOT</h1>
+            <p>be shared.</p>
+            <form action="login.html">
+                <input type="text" name="name" placeholder="Appleseed"><br>
+                <textarea type="email" name="email" placeholder="jappleseed56@whatever.co.uk"></textarea><br>
+                <input type="password" name="password" required><br>
+                <input type="number" id="age" required><br>
+                <input type="submit" value="Submit" onclick="check()">
+                <input type="reset" value="Reset"><br>
+                <input id="gender" type="radio" name="gender" value="Female">Female
+                <input id="gender" type="radio" name="gender" value="Male">Male
+                <input type="checkbox" required>Terms and Conditions
+            </form>
+    </center>
+    <script>
+
+        function check() { 
+            var age = document.getElementById("age").value;
+            var gender = document.getElementById("gender").value;
+            console.log(age);
+            console.log(gender)
+            if (age < 13){
+                window.alert("You are too young to subscribe");
+            }  else {
+                    window.alert("You can subscribe!");
+                }
+            
+        }
+    </script>
+</html>
+
+
