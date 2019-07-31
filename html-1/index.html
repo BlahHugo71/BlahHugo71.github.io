@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <center>
-            <h1>Please put all info.</h1><br>
-            <p>Your personal information will</p>
-            <h1>NOT</h1>
-            <p>be shared.</p>
-            <form action="login.html">
-                <input type="text" name="name" placeholder="Appleseed"><br>
-                <textarea type="email" name="email" placeholder="jappleseed56@whatever.co.uk"></textarea><br>
-                <input type="password" name="password" required><br>
-                <input type="number" id="age" required><br>
-                <input type="submit" value="Submit" onclick="check()">
-                <input type="reset" value="Reset"><br>
-                <input id="gender" type="radio" name="gender" value="Female">Female
-                <input id="gender" type="radio" name="gender" value="Male">Male
-                <input type="checkbox" required>Terms and Conditions
-            </form>
+        <div class="container">
+                <h1>Please put all info.</h1><br>
+                <p>Your personal information will</p>
+                <h1>NOT</h1>
+                <p>be shared.</p>
+                <div>
+                <form action="login.html">
+                        <input class="form-control" type="text" name="name" placeholder="Appleseed"><br>
+                        <textarea class="form-control" type="email" name="email" placeholder="jappleseed56@whatever.co.uk"></textarea><br>
+                        <input placeholder="input your password" class="form-control" type="password" name="password" required><br>
+                        <input placeholder="input your age" class="form-control" type="number" id="age" required><br>
+                        <input class="btn btn-success" type="submit" value="Submit" onclick="check()">
+                        <input class="btn btn-danger"type="reset" value="Reset"><br>
+                        <input id="gender" type="radio" name="gender" value="Female">Female
+                        <input id="gender" type="radio" name="gender" value="Male">Male
+                        <input type="checkbox" required>Terms and Conditions
+                    </form>
+                </div>
+        </div>
+            
+           
     </center>
     <script>
 
