@@ -1,0 +1,19 @@
+*{
+    font-family: "Comic Sans MS"
+}
+    
+.hugo{
+    background-color:#ffcccc;
+}
+
+h1{
+    color: blueviolet;
+}
+
+h2{
+    color: green;
+}
+
+p{
+    font-size: 23px;
+}
