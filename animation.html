@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+
+    <style>
+
+        @keyframes changingColor{
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            75% {background-color: green;}
+            100% {background-color: red;}
+        }
+
+        @keyframes movingDot{
+            0% {left: 0px; height: 200px; width: 200px;}
+            50% {left: 500px; height: 600px; width: 600px;}
+            100% {left: 0px; height: 200px; width: 200px;}
+        }
+
+        .animatedDot{
+            animation-name: changingColor, movingDot;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .hiddenMenu{ 
+            position: relative; 
+            left: -110px; 
+            top: 250px; 
+            transition: 1s; 
+        } 
+
+        .hiddenMenu:hover{ 
+            left: 0px; 
+            transition: 1s; 
+        } 
+
+        .firstMenu{ 
+            background-color: #eda350; 
+            width: 100px; 
+            height: 100px; 
+            clear: left; 
+            float: left; 
+        }
+
+        .secondMenu{ 
+            background-color: #eda350; 
+            width: 100px; 
+            height: 100px; 
+            float: left; 
+        } 
+
+        /* @keyframes dotHover{
+            0% {background-color: pink;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            75% {background-color: green;}
+            100% {background-color: red;}
+        }
+        .circle{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 250px;
+        }
+
+        .animatedDot-2:hover{
+            animation-name: dotHover;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        } */
+
+    </style>
+
+</head>
+<body style="background-color: black">
+    <div class="animatedDot"></div>
+    <br>
+    <div class="circle animatedDot-2"></div>
+    <div class="hiddenMenu"> 
+    <div class="firstMenu"><p>Hello there! <br>:)</p></div> 
+    <div class="secondMenu"> 
+    <p>Hover<br>me!</p> 
+    </div> 
+    </div>
+</body>
+</html>
