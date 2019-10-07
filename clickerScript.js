@@ -24,14 +24,15 @@ function incrementClicks() {
 function buyBuilding(cost, persec_build) {
     if (clicks > cost || clicks == cost) {
         clicks -= cost;
+        execute(persec + persec_build);
         persec += persec_build;
-        execute(persec_build);
-        recalculate()
+        recalculate();
     }
 }
 
 function execute(n) {
-    prod = setInterval(incrementClicks, 1000 / n)
+    prod = 0
+    prod = setInterval(incrementClicks, 1000 / n);
 }
 
 function recalculate() {
