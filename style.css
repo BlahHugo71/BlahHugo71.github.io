@@ -1,4 +1,4 @@
-body {
+body, .col-md-6 {
     background-color: #60cdb5;
     color: #cd6078;
 }
