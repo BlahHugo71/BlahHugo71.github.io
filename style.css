@@ -6,8 +6,13 @@ body {
 .list-group-item {
     background-color: #60cdb5;
     color: #cd6078;
+    border: 1px solid #cd6078;
 }
 
 a {
-    background-color: #cd6078;
+    color: #cd6078;
+}
+
+a:hover {
+    color: #cd6078;
 }
