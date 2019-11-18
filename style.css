@@ -1,4 +1,13 @@
-body, .col-md-6 {
+body {
     background-color: #60cdb5;
     color: #cd6078;
+}
+
+.list-group-item {
+    background-color: #60cdb5;
+    color: #cd6078;
+}
+
+a {
+    background-color: #cd6078;
 }
