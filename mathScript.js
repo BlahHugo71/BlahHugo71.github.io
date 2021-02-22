@@ -4,7 +4,7 @@ var a = 0;
 var a_per_sec = 0;
 var prod;
 
-document.getElementById("click_me").onclick = function() {incrementClicks()};
+document.getElementById("click_me").onclick = function() {incrementClicks(1)};
 
 document.getElementById("building_1").onclick = function() {buyBuilding(50, 1)};
 
@@ -16,7 +16,7 @@ document.getElementById("building_4").onclick = function() {buyBuilding(70000, 8
 
 document.getElementById("building_5").onclick = function() {buyBuilding(500000, 9600)};
 
-function incrementA(times=1) {
+function incrementA(times) {
     a += times;
     recalculate();
 }
